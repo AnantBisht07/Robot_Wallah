@@ -1,4 +1,12 @@
 import React from "react";
+import story1 from "../assets/story1.jpg";
+import story2 from "../assets/story2.jpg";
+import story3 from "../assets/story3.jpg";
+import vision from "../assets/vision.png";
+import student from "../assets/student.jpg";
+import child from "../assets/child.png.webp";
+import Lab from "../assets/Lab.png.webp";
+
 
 const SuccessStory = () => {
   return (
@@ -10,7 +18,7 @@ const SuccessStory = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full items-center justify-center text-center mt-16 px-4 sm:px-8 md:px-16 lg:px-28">
-        {['story1.jpg', 'story2.jpg', 'story3.jpg'].map((img, index) => (
+        {[story1, story2, story3].map((img, index) => (
           <div key={index} className="p-1 border border-gray-300 rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl">
             <img src={img} alt="success story" className="w-full h-64 object-cover rounded-lg" />
           </div>
@@ -19,7 +27,7 @@ const SuccessStory = () => {
 
       {/* IIT Hyderabad Section */}
       <div className="flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 mt-20 px-4 sm:px-8 md:px-16 lg:px-28">
-        <img src="vision.png" alt="sideimg" className=" w-full max-w-xs sm:max-w-sm md:max-w-md h-auto rounded-lg" />
+        <img src={vision} alt="sideimg" className=" w-full max-w-xs sm:max-w-sm md:max-w-md h-auto rounded-lg" />
         <div className="max-w-2xl">
           <h1 className="text-lg md:text-xl font-semibold text-orange-500">
             Technology Partner - Elan & nVision (IIT Hyderabad)
@@ -38,7 +46,7 @@ const SuccessStory = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full mt-20 px-4 sm:px-8 md:px-16 lg:px-28 text-left">
         {[ 
           {
-            img: "student.jpg", title: "WORKSHOP", details: [
+            img: {student}, title: "WORKSHOP", details: [
               "Training by industry expert",
               "90% is practical & 10% theory",
               "Assembly of robotic components",
@@ -46,7 +54,7 @@ const SuccessStory = () => {
             ]
           },
           {
-            img: "child.png.webp", title: "CHAMPIONSHIP", details: [
+            img: {child}, title: "CHAMPIONSHIP", details: [
               "Selection from zonal center",
               "Grand final at IIT India",
               "Robo race, drone race, robo war, etc.",
@@ -54,7 +62,7 @@ const SuccessStory = () => {
             ]
           },
           {
-            img: "Lab.png.webp", title: "AI & ROBOTICS LAB", details: [
+            img: {Lab}, title: "AI & ROBOTICS LAB", details: [
               "Architecture design & setup",
               "Prototype for showcase",
               "Kits, components, and products",

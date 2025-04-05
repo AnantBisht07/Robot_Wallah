@@ -1,17 +1,26 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import hr from "../assets/hr.webp";
+import deepak from "../assets/deepak.jpg";
+import kanchan from "../assets/kanchan.jpg";
+import babita from "../assets/babita.jpg";
+import shaan from "../assets/shaan.jpg";
+import manish from "../assets/manish.jpg";
+import law from "../assets/law.webp";
+import exc from "../assets/exc.webp";
+
 
 const Ourteam = () => {
   const data = [
-    { img: "/hr.webp", name: "CHRO" },
-    { img: "/deepak.jpg", name: "Sr. ROBOTIC ENGINEER" },
-    { img: "/kanchan.jpg", name: "STEM ENGINEER" },
-    { img: "/babita.jpg", name: "SENIOR COORDINATOR" },
-    { img: "/shaan.jpg", name: "SENIOR COORDINATOR" },
-    { img: "/manish.jpg", name: "SENIOR COORDINATOR" },
-    { img: "/law.webp", name: "TAXATION AND LEGALITY" },
-    { img: "exc.webp", name: "EXECUTION COORDINATOR" },
+    { img: {hr}, name: "CHRO" },
+    { img: {deepak}, name: "Sr. ROBOTIC ENGINEER" },
+    { img: {kanchan}, name: "STEM ENGINEER" },
+    { img: {babita}, name: "SENIOR COORDINATOR" },
+    { img: {shaan}, name: "SENIOR COORDINATOR" },
+    { img: {manish}, name: "SENIOR COORDINATOR" },
+    { img: {law}, name: "TAXATION AND LEGALITY" },
+    { img: {exc}, name: "EXECUTION COORDINATOR" },
   ];
 
   useEffect(() => {

@@ -1,5 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import vdo from '../assets/vdo.mp4';
+
 
 const Hero = () => {
   const openPDF = () => {
@@ -15,7 +17,7 @@ const Hero = () => {
           loop
           muted
           playsInline
-          src="vdo.mp4"
+          src={vdo}
           type="video/mp4"
         ></video>
       </div>

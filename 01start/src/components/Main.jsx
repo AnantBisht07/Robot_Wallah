@@ -1,6 +1,10 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Typewriter } from "react-simple-typewriter";
+import roboremovebg from "../assets/robo-removebg.png";
+import codingremovebg from "../assets/coding-removebg.png";
+import airemovebg from "../assets/ai-removebg.png";
+import first from "../assets/first.png";
 
 const Main = () => {
   return (
@@ -53,9 +57,9 @@ const Main = () => {
             {/* Topics Section */}
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 md:gap-10 mt-10">
               {[
-                { img: "robo-removebg.png", label: "Robotics" },
-                { img: "coding-removebg.png", label: "Coding" },
-                { img: "ai-removebg.png", label: "AI" },
+                { img: roboremovebg, label: "Robotics" },
+                { img: codingremovebg, label: "Coding" },
+                { img: airemovebg, label: "AI" },
               ].map((topic, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <img src={topic.img} alt={topic.label} className="h-12 w-auto" />
@@ -68,7 +72,7 @@ const Main = () => {
           {/* Circular Image */}
           <div className="relative mt-10 lg:mt-24">
             <div className="h-[250px] w-[250px] md:h-[350px] md:w-[350px] lg:h-[450px] lg:w-[450px] bg-orange-500 rounded-full flex items-center justify-center">
-              <img src="first.png" alt="Feature" className="w-full h-auto rounded-full" />
+              <img src={first} alt="Feature" className="w-full h-auto rounded-full" />
             </div>
           </div>
         </div>

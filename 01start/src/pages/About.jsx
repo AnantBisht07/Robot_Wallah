@@ -1,15 +1,22 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import kk from "../assets/kk.jpg";
+import pradeep from "../assets/pradeep.jpg";
+import bihar from "../assets/bihar.webp";
+import bhatt from "../assets/bhatt.webp";
+import manish from "../assets/manish.jpg";
+import tp from "../assets/tp.jpg";
+
 
 const About = () => {
   const teamData = [
-    { img: "/kk.jpg", name: "K.K PANDA", subname:"Chief Financial Officer (CFO)" },
-    { img: "/pradeep.jpg", name: "PRADEEP KR. PANDIT", subname: "Chief Marketing Officer (CMO)" },
-    { img: "/bihar.webp", name: "SANJAY KUMAR", subname: "Bihar Branch Head"},
-    { img: "/bhatt.webp", name: "Snehasish Bhattacharji", subname: "(MENTOR)" },
-    { img: "/manish.webp", name: "MANISH KUMAR", subname: "(CTO)" },
-    { img: "/tp.webp", name: "T.P.MAURYA", subname: "(IT HEAD)" },
+    { img: {kk}, name: "K.K PANDA", subname:"Chief Financial Officer (CFO)" },
+    { img: {pradeep}, name: "PRADEEP KR. PANDIT", subname: "Chief Marketing Officer (CMO)" },
+    { img: {bihar}, name: "SANJAY KUMAR", subname: "Bihar Branch Head"},
+    { img: {bhatt}, name: "Snehasish Bhattacharji", subname: "(MENTOR)" },
+    { img: {manish}, name: "MANISH KUMAR", subname: "(CTO)" },
+    { img: {tp}, name: "T.P.MAURYA", subname: "(IT HEAD)" },
 
   ];
 
