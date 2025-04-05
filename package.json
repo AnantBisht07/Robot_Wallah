@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "nodemon server/app.js",
     "build": "npm install && npm install --prefix 01start && npm run build --prefix 01start",
-    "start": "nodemon server/app.js"
+    "start": "nodemon server/app.js",
+    "startnode": "node app.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
