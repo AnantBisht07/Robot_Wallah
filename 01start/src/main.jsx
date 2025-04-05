@@ -21,7 +21,7 @@ import PmShriYojna from './pages/services/PmShriYojna.jsx';
 import CompositeSkillLab from './pages/services/CompositeSkillLab.jsx';
 import AerospaceLab from './pages/services/AerospaceLab.jsx';
 import AtalTinkeringLab from './pages/services/AtalTinkeringLab.jsx';
-import ComingSoon from './pages/Comingsoon.jsx';
+import ComingSoon from './pages/ComingSoon.jsx';
 import StudentRegisteration from './pages/StudentRegisteration.jsx';
 import AiCurriculum from './pages/AiCurriculum.jsx';
 import Teachertraining from './pages/Teachertraining.jsx';
