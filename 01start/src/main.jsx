@@ -17,7 +17,7 @@ import About from './pages/About.jsx';
 import PrivacyPolicy from './pages/Privacypolicy.jsx'
 import ErrorPage from './pages/ErrorPage.jsx';
 import InnovationLab from './pages/InnovationLab.jsx';
-import PmShriYojna from './pages/services/Pmshriyojna.jsx';
+import PmShriYojna from './pages/services/PmShriYojna.jsx';
 import CompositeSkillLab from './pages/services/CompositeSkillLab.jsx';
 import AerospaceLab from './pages/services/AerospaceLab.jsx';
 import AtalTinkeringLab from './pages/services/AtalTinkeringLab.jsx';
