@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));;
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({
-  origin: "http://localhost:5173", // Match frontend URL
+  origin: "https://robot-wallah-1.onrender.com", // Match frontend URL
   credentials: true,
 }));
 
