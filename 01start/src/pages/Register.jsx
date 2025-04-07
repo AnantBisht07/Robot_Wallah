@@ -13,6 +13,7 @@ const Register = () => {
     username: "",
     number: "",
     password: "",
+    email: "",
   });
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false); // Loading state
@@ -38,14 +39,15 @@ const Register = () => {
         username: "",
         password: "",
         number: "",
+        email: "",
       });
     } catch (error) {
       setMessage(
         error.response?.data?.message || "Signup failed. Please try again."
       );
-    }finally {
+    } finally {
       setLoading(false);
-    } 
+    }
   };
 
   // loading when component render
@@ -101,6 +103,21 @@ const Register = () => {
                 />
               </div>
 
+              <div className="mb-4">
+                <label htmlFor="email" className="block text-gray-400 mb-1">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"
+                  placeholder="Enter your email"
+                />
+              </div>
+
               <div className="mb-6">
                 <label htmlFor="password" className="block text-gray-400 mb-1">
                   Password
@@ -150,7 +167,6 @@ const Register = () => {
                   ) : (
                     "Sign Up"
                   )}
-
                 </button>
                 <h4 className="text-xs mt-6 text-left">
                   Already have an account?{" "}
