@@ -5,18 +5,19 @@ import kk from "../assets/kk.jpg";
 import pradeep from "../assets/pradeep.jpg";
 import bihar from "../assets/bihar.webp";
 import bhatt from "../assets/bhatt.webp";
-import manish from "../assets/manish.jpg";
+import manish from "../assets/manish.webp";
 import tp from "../assets/tp.jpg";
+import vikas from "../assets/vikas.webp";
 
 
 const About = () => {
   const teamData = [
-    { img: {kk}, name: "K.K PANDA", subname:"Chief Financial Officer (CFO)" },
-    { img: {pradeep}, name: "PRADEEP KR. PANDIT", subname: "Chief Marketing Officer (CMO)" },
-    { img: {bihar}, name: "SANJAY KUMAR", subname: "Bihar Branch Head"},
-    { img: {bhatt}, name: "Snehasish Bhattacharji", subname: "(MENTOR)" },
-    { img: {manish}, name: "MANISH KUMAR", subname: "(CTO)" },
-    { img: {tp}, name: "T.P.MAURYA", subname: "(IT HEAD)" },
+    { img: kk, name: "K.K PANDA", subname:"Chief Financial Officer (CFO)" },
+    { img: pradeep, name: "PRADEEP KR. PANDIT", subname: "Chief Marketing Officer (CMO)" },
+    { img: bihar, name: "SANJAY KUMAR", subname: "Bihar Branch Head"},
+    { img: bhatt, name: "Snehasish Bhattacharji", subname: "(MENTOR)" },
+    { img: manish, name: "MANISH KUMAR", subname: "(CTO)" },
+    { img: tp, name: "T.P.MAURYA", subname: "(IT HEAD)" },
 
   ];
 
@@ -34,7 +35,7 @@ const About = () => {
         {/* Left Side - CEO Image */}
         <div className="md:w-1/3 flex justify-center">
           <img
-            src="/vikas.webp"
+            src={vikas}
             alt="Vikas Singh"
             className="w-80 h-80 md:w-[450px] md:h-[450px] rounded-full object-cover shadow-xl"
           />

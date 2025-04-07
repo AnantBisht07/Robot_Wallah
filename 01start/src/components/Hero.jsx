@@ -1,11 +1,12 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import vdo from '../assets/vdo.mp4';
+import cpPdf from "../assets/cp.pdf";
 
 
 const Hero = () => {
   const openPDF = () => {
-    window.open('/cp.pdf', '_blank');
+    window.open(cpPdf, '_blank');
   }
   return (
     <div className="relative h-[695px] w-full flex flex-col items-center justify-center text-white px-4">

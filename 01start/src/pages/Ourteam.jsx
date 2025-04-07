@@ -13,14 +13,14 @@ import exc from "../assets/exc.webp";
 
 const Ourteam = () => {
   const data = [
-    { img: {hr}, name: "CHRO" },
-    { img: {deepak}, name: "Sr. ROBOTIC ENGINEER" },
-    { img: {kanchan}, name: "STEM ENGINEER" },
-    { img: {babita}, name: "SENIOR COORDINATOR" },
-    { img: {shaan}, name: "SENIOR COORDINATOR" },
-    { img: {manish}, name: "SENIOR COORDINATOR" },
-    { img: {law}, name: "TAXATION AND LEGALITY" },
-    { img: {exc}, name: "EXECUTION COORDINATOR" },
+    { img: hr, name: "CHRO" },
+    { img: deepak, name: "Sr. ROBOTIC ENGINEER" },
+    { img: kanchan, name: "STEM ENGINEER" },
+    { img: babita, name: "SENIOR COORDINATOR" },
+    { img: shaan, name: "SENIOR COORDINATOR" },
+    { img: manish, name: "SENIOR COORDINATOR" },
+    { img: law, name: "TAXATION AND LEGALITY" },
+    { img: exc, name: "EXECUTION COORDINATOR" },
   ];
 
   useEffect(() => {

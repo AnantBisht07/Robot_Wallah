@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
+import rapidPng from "../../assets/rapid.png";
 
 const RapidSkill = () => {
   const data = [
@@ -66,7 +67,7 @@ const RapidSkill = () => {
         </h1>
 
         <div className="h-60 w-60 sm:h-80 sm:w-80 md:h-[450px] md:w-[450px]">
-          <img className="w-full h-full object-cover rounded-lg" src="/rapid.png" alt="Rapid Skill" />
+          <img className="w-full h-full object-cover rounded-lg" src={rapidPng} alt="Rapid Skill" />
         </div>
       </div>
 

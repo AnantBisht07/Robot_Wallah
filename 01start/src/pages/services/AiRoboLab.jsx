@@ -3,6 +3,11 @@ import Navbar from "../../components/Navbar";
 import CarouselLoader from "../../components/CarouselLoader";
 import { motion } from "framer-motion";
 import Footer from "../../components/Footer";
+import ArvrPng from "../../assets/arvr.png";
+import Innovationlab from "../../assets/innovationlab.webp";
+import Lab from "../../assets/Lab.png.webp";
+import Arlab from "../../assets/arlab.webp";
+
 
 const AiRoboLab = () => {
   const steps = [
@@ -49,7 +54,7 @@ const AiRoboLab = () => {
           </div>
           <img
             className="rounded-full max-w-full h-auto object-cover"
-            src="/arvr.png"
+            src={ArvrPng}
             alt="AI & Robotics"
           />
         </div>
@@ -62,7 +67,7 @@ const AiRoboLab = () => {
           {[
             {
               title: "RW INNOVATION LAB",
-              image: "/innovationlab.webp",
+              image: Innovationlab,
               points: [
                 "World-Class Infrastructure",
                 "Cutting-Edge Technology Integration",
@@ -72,7 +77,7 @@ const AiRoboLab = () => {
             },
             {
               title: "ROBOTIC LAB",
-              image: "/Lab.png.webp",
+              image: Lab,
               points: [
                 "Architecture & Interior design",
                 "Robotic Kits & Components",
@@ -82,7 +87,7 @@ const AiRoboLab = () => {
             },
             {
               title: "AR/VR & AI LAB",
-              image: "/arlab.webp",
+              image: Arlab,
               points: [
                 "Prototype for showcase",
                 "AR/VR kits & Component",

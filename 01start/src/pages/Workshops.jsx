@@ -1,8 +1,12 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import basicPdf from '../assets/basic.pdf';
+import { useNavigate } from 'react-router-dom';
 
 const FeatureCard = ({ title, description, imageSrc }) => {
+  
+
   
   return (
     <div className="relative group bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-orange-500/20 h-full">
@@ -27,6 +31,7 @@ const FeatureCard = ({ title, description, imageSrc }) => {
 };
 
 const BenefitCard = ({ title, imageSrc }) => {
+ 
   return (
     <div className="relative group bg-gradient-to-br from-gray-900 to-black rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/20">
       <div className="absolute inset-0 bg-gradient-to-r from-orange-600/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -48,8 +53,11 @@ const BenefitCard = ({ title, imageSrc }) => {
 
 function Workshops() {
   const openPDF = () => {
-    window.open("/basic.pdf", "_blank");
+    window.open(basicPdf, "_blank");
   };
+
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-black text-white">
       <Navbar />
@@ -219,7 +227,9 @@ function Workshops() {
             Limited seats available for our upcoming session.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full text-xl font-semibold hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 transform hover:-translate-y-1">
+            <button 
+            onClick={() => navigate('/register')}
+            className="px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full text-xl font-semibold hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 transform hover:-translate-y-1">
               Register Now
             </button>
             <button 

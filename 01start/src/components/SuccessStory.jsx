@@ -1,4 +1,5 @@
 import React from "react";
+
 import story1 from "../assets/story1.jpg";
 import story2 from "../assets/story2.jpg";
 import story3 from "../assets/story3.jpg";
@@ -6,6 +7,7 @@ import vision from "../assets/vision.png";
 import student from "../assets/student.jpg";
 import child from "../assets/child.png.webp";
 import Lab from "../assets/Lab.png.webp";
+
 
 
 const SuccessStory = () => {
@@ -46,7 +48,7 @@ const SuccessStory = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full mt-20 px-4 sm:px-8 md:px-16 lg:px-28 text-left">
         {[ 
           {
-            img: {student}, title: "WORKSHOP", details: [
+            img: student, title: "WORKSHOP", details: [
               "Training by industry expert",
               "90% is practical & 10% theory",
               "Assembly of robotic components",
@@ -54,7 +56,7 @@ const SuccessStory = () => {
             ]
           },
           {
-            img: {child}, title: "CHAMPIONSHIP", details: [
+            img: child, title: "CHAMPIONSHIP", details: [
               "Selection from zonal center",
               "Grand final at IIT India",
               "Robo race, drone race, robo war, etc.",
@@ -62,7 +64,7 @@ const SuccessStory = () => {
             ]
           },
           {
-            img: {Lab}, title: "AI & ROBOTICS LAB", details: [
+            img: Lab, title: "AI & ROBOTICS LAB", details: [
               "Architecture design & setup",
               "Prototype for showcase",
               "Kits, components, and products",

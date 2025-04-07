@@ -9,40 +9,53 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
+import c1Webp from "../assets/c1.webp";
+import c2Webp from "../assets/c2.webp";
+import c3Webp from "../assets/c3.webp";
+import c4Webp from "../assets/c4.webp";
+import c5Webp from "../assets/c5.webp";
+import c6Webp from "../assets/c6.webp";
+import c7Webp from "../assets/c7.webp";
+import c8Webp from "../assets/c8.webp";
+import c9Webp from "../assets/c9.webp";
+import c10Webp from "../assets/c10.webp";
+import c11Webp from "../assets/c11.webp";
+
+
 const CarouselLoader = () => {
   const images = [
     {
-      image: "/c1.webp",
+      image: c1Webp,
     },
     {
-      image: "/c2.webp",
+      image: c2Webp,
     },
     {
-      image: "/c3.webp",
+      image: c3Webp,
     },
     {
-      image: "/c4.webp",
+      image: c4Webp,
     },
     {
-      image: "/c5.webp",
+      image: c5Webp,
     },
     {
-      image: "/c6.webp",
+      image: c6Webp,
     },
     {
-      image: "/c7.webp",
+      image: c7Webp,
     },
     {
-      image: "/c8.webp",
+      image: c8Webp,
     },
     {
-      image: "/c9.webp",
+      image: c9Webp,
     },
     {
-      image: "/c10.webp",
+      image: c10Webp,
     },
     {
-      image: "/c11.webp",
+      image: c11Webp,
     },
   ];
 

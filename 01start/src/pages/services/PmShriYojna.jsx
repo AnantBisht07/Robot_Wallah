@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import { Link } from "react-router-dom";
+import Pmshriyojna from "../../assets/yojna.webp";
 
 const PmShriYojna = () => {
   return (
@@ -11,7 +12,7 @@ const PmShriYojna = () => {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center mt-16 ">
         <div>
           <img
-            src="/yojna.webp"
+            src={Pmshriyojna}
             alt="PM SHRI Yojana"
             className="w-full rounded-lg shadow-lg"
           />

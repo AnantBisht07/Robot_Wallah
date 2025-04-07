@@ -5,8 +5,10 @@ import roboremovebg from "../assets/robo-removebg.png";
 import codingremovebg from "../assets/coding-removebg.png";
 import airemovebg from "../assets/ai-removebg.png";
 import first from "../assets/first.png";
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-white py-8 mx-4 md:mx-12 mt-14">
       {/* 4 Cards Section */}
@@ -52,7 +54,7 @@ const Main = () => {
               </span>
             </p>
 
-            <Button className="mt-6 md:mt-8 h-12 w-auto">Book a trial class</Button>
+            <Button className="mt-6 md:mt-8 h-12 w-auto" onClick={() => navigate('/student-registeration')}>Book a trial class</Button>
 
             {/* Topics Section */}
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 md:gap-10 mt-10">

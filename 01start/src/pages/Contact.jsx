@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 const ContactPage = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,6 +37,7 @@ const ContactPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the component mounts
   }, []);
+
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -345,11 +348,7 @@ const ContactPage = () => {
       {/* CTA Section */}
       <section className="py-16 relative">
         <div className="absolute inset-0">
-          <img
-            src="/api/placeholder/1920/1080?text=Robotics%20Background"
-            alt="Robotics CTA background"
-            className="w-full h-full object-cover opacity-20"
-          />
+         
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-orange-600/30 to-purple-600/30" />
         <div className="container mx-auto px-4 relative z-10 text-center">
@@ -364,60 +363,24 @@ const ContactPage = () => {
             learn more about our programs or schedule a demo.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full text-xl font-semibold hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 transform hover:-translate-y-1">
+            <button
+            onClick={() => navigate('/register')}
+             className="px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full text-xl font-semibold hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 transform hover:-translate-y-1">
               Schedule a Demo
             </button>
-            <button className="px-8 py-4 bg-transparent border-2 border-orange-500 rounded-full text-xl font-semibold hover:bg-orange-500/10 transition-colors duration-300">
+            <button
+            onClick={() => navigate('/courses/rapidskill')} 
+             className="px-8 py-4 bg-transparent border-2 border-orange-500 rounded-full text-xl font-semibold hover:bg-orange-500/10 transition-colors duration-300">
               View Programs
             </button>
           </div>
         </div>
       </section>
 
-      {/* Social Media Section */}
-      <section className="py-16 bg-black">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Connect With{" "}
-              <span className="bg-gradient-to-r from-orange-400 to-orange-600 text-transparent bg-clip-text">
-                Us
-              </span>
-            </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Follow us on social media to stay updated with our latest events,
-              workshops, and robotics innovations.
-            </p>
-          </div>
+    
 
-          <div className="flex flex-wrap justify-center gap-6">
-            {[
-              { name: "Facebook", icon: "facebook" },
-              { name: "Twitter", icon: "twitter" },
-              { name: "Instagram", icon: "instagram" },
-              { name: "LinkedIn", icon: "linkedin" },
-              { name: "YouTube", icon: "youtube" },
-            ].map((social, index) => (
-              <a
-                href="#"
-                key={index}
-                className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center group hover:scale-110 transition-all duration-300"
-              >
-                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center">
-                  <img
-                    src={`/api/placeholder/32/32?text=${social.icon}`}
-                    alt={social.name}
-                    className="w-6 h-6"
-                  />
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="py-16 bg-gradient-to-br from-gray-900 to-black">
+      {/* Newsletter Section, will update in future */}
+      {/* <section className="py-16 bg-gradient-to-br from-gray-900 to-black">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 md:p-12 shadow-xl border border-gray-700">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -480,7 +443,7 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <Footer />
