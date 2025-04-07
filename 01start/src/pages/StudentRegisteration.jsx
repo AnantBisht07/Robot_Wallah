@@ -33,7 +33,7 @@ const StudentRegisteration = () => {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/v1/auth/registration",
+        "https://robot-wallah-1.onrender.com/api/v1/auth/registration",
         formData,
         { withCredentials: true }
       );

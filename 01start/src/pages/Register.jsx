@@ -28,7 +28,7 @@ const Register = () => {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/v1/auth/signup",
+        "https://robot-wallah-1.onrender.com/api/v1/auth/signup",
         formData,
         { withCredentials: true }
       );

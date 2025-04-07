@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import vikas from "../assets/vikas.webp";
 
 const ApplyMentor = () => {
   const [formData, setFormData] = useState({
@@ -28,9 +29,9 @@ const ApplyMentor = () => {
       <section className="mb-6 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-32 mx-4 md:mx-32 pt-28">
         <div className="w-full md:w-1/3 mb-6 md:mb-0 flex justify-center">
           <img
-            src="/vikas.webp" // Replace with your CEO image path
+            src={vikas}
             alt="Vikas Singh, CEO"
-            className="w-full h-auto rounded-full shadow-xl object-cover"
+            className="w-full h-auto rounded-full shadow-xl object-cover max-w-xs md:max-w-full"
           />
         </div>
         <div className="md:w-2/3 md:pl-8 text-center md:text-left">
@@ -56,9 +57,9 @@ const ApplyMentor = () => {
         </div>
       </section>
 
-      {/* Mentor Application Form */}
-      <div className="flex justify-center items-center min-h-screen p-4 gap-20">
-        <h1 className="max-w-2xl text-gray-300 ">
+      {/* Mentor Application Section */}
+      <div className="flex flex-col md:flex-row justify-center items-center min-h-screen p-4 gap-10 md:gap-20">
+        <h1 className="max-w-2xl text-gray-300 mb-8 md:mb-0 text-justify px-2 md:px-0">
           Hello, I’m Vikas Singh, founder and CEO of Robotwallah. I specialize
           in designing and developing autonomous robots for industries like
           healthcare, education, and manufacturing. I've worked on major
@@ -71,15 +72,12 @@ const ApplyMentor = () => {
           With hands-on experience in robotics, AI, machine learning, and data
           science, I’m passionate about practical learning and staying aligned
           with industry trends. If you’re interested in robotics and AI, I’d
-          love to guide you in growing your expertise. Thank you!chine learning
-          and data science i focus on practical learning and industry trends and
-          career guidance for student and professionals If you are passionate
-          about robotics and artificial intelligence, I am love to help you
-          navigate this field and grow your expertise. Thank you.
+          love to guide you in growing your expertise. Thank you!
         </h1>
+
         <form
           onSubmit={handleSubmit}
-          className="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-6 md:p-8 shadow-xl max-w-lg w-full"
+          className="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-6 md:p-8 shadow-xl w-full max-w-lg"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <div>
@@ -151,9 +149,7 @@ const ApplyMentor = () => {
               value={formData.expertise}
               onChange={handleChange}
               required
-              rows="1"
               className="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"
-              placeholder="Enter your expertise areas (e.g., Iot, robotics)"
             >
               <option value="" disabled>
                 Select an option
