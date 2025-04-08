@@ -132,6 +132,7 @@ const Register = () => {
                   placeholder="Enter your password"
                 />
               </div>
+
                
 
               <div className="text-center">
